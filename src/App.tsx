@@ -1,3 +1,4 @@
+import { movies } from './data';
 import './App.css';
 
 function App() {
@@ -37,78 +38,20 @@ function App() {
           <button>Apply</button>
         </div>
         <section className='MovieList'>
-          <article className='MovieList__Movie'>
-            <div className='MovieList__Movie__Poster'>
-              <img
-                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
-                alt='Movie Poster'
-              />
-            </div>
-            <div className='MovieList__Movie__Details'>
-              <h2>Black Adam</h2>
-              <p>Acción, 2h 10min, +14.</p>
-            </div>
-          </article>
-          <article className='MovieList__Movie'>
-            <div className='MovieList__Movie__Poster'>
-              <img
-                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
-                alt='Movie Poster'
-              />
-            </div>
-            <div className='MovieList__Movie__Details'>
-              <h2>Black Adam</h2>
-              <p>Acción, 2h 10min, +14.</p>
-            </div>
-          </article>
-          <article className='MovieList__Movie'>
-            <div className='MovieList__Movie__Poster'>
-              <img
-                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
-                alt='Movie Poster'
-              />
-            </div>
-            <div className='MovieList__Movie__Details'>
-              <h2>Black Adam</h2>
-              <p>Acción, 2h 10min, +14.</p>
-            </div>
-          </article>
-          <article className='MovieList__Movie'>
-            <div className='MovieList__Movie__Poster'>
-              <img
-                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
-                alt='Movie Poster'
-              />
-            </div>
-            <div className='MovieList__Movie__Details'>
-              <h2>Black Adam</h2>
-              <p>Acción, 2h 10min, +14.</p>
-            </div>
-          </article>
-          <article className='MovieList__Movie'>
-            <div className='MovieList__Movie__Poster'>
-              <img
-                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
-                alt='Movie Poster'
-              />
-            </div>
-            <div className='MovieList__Movie__Details'>
-              <h2>Black Adam</h2>
-              <p>Acción, 2h 10min, +14.</p>
-            </div>
-          </article>
-          <article className='MovieList__Movie'>
-            <div className='MovieList__Movie__Poster'>
-              <img
-                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
-                alt='Movie Poster'
-              />
-            </div>
-            <div className='MovieList__Movie__Details'>
-              <h2>Black Adam</h2>
-              <p>Acción, 2h 10min, +14.</p>
-            </div>
-          </article>
+          {movies.map((movie) => (
+            <article className='MovieList__Movie' key={movie.id}>
+              <div className='MovieList__Movie__Poster'>
+                <img src={movie.poster} alt={movie.title} draggable={false} />
+              </div>
+              <div className='MovieList__Movie__Details'>
+                <h2>{movie.title}</h2>
+                <p>
+                  {movie.genres.join(',')}, {movie.duration},{' '}
+                  {movie.restriction}.
+                </p>
+              </div>
+            </article>
+          ))}
         </section>
       </main>
     </div>

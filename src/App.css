@@ -80,7 +80,6 @@
 .MovieList__Movie {
   display: flex;
   flex-direction: column;
-  width: fit-content;
   user-select: none;
   gap: 20px;
 }
@@ -91,6 +90,7 @@
 }
 
 .MovieList__Movie__Poster img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -98,5 +98,7 @@
 .MovieList__Movie__Details {
   display: flex;
   flex-direction: column;
+  max-width: fit-content;
+  height: 72px;
   gap: 6px;
 }
