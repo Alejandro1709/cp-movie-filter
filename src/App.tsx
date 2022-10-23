@@ -36,6 +36,80 @@ function App() {
           </ul>
           <button>Apply</button>
         </div>
+        <section className='MovieList'>
+          <article className='MovieList__Movie'>
+            <div className='MovieList__Movie__Poster'>
+              <img
+                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
+                alt='Movie Poster'
+              />
+            </div>
+            <div className='MovieList__Movie__Details'>
+              <h2>Black Adam</h2>
+              <p>Acción, 2h 10min, +14.</p>
+            </div>
+          </article>
+          <article className='MovieList__Movie'>
+            <div className='MovieList__Movie__Poster'>
+              <img
+                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
+                alt='Movie Poster'
+              />
+            </div>
+            <div className='MovieList__Movie__Details'>
+              <h2>Black Adam</h2>
+              <p>Acción, 2h 10min, +14.</p>
+            </div>
+          </article>
+          <article className='MovieList__Movie'>
+            <div className='MovieList__Movie__Poster'>
+              <img
+                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
+                alt='Movie Poster'
+              />
+            </div>
+            <div className='MovieList__Movie__Details'>
+              <h2>Black Adam</h2>
+              <p>Acción, 2h 10min, +14.</p>
+            </div>
+          </article>
+          <article className='MovieList__Movie'>
+            <div className='MovieList__Movie__Poster'>
+              <img
+                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
+                alt='Movie Poster'
+              />
+            </div>
+            <div className='MovieList__Movie__Details'>
+              <h2>Black Adam</h2>
+              <p>Acción, 2h 10min, +14.</p>
+            </div>
+          </article>
+          <article className='MovieList__Movie'>
+            <div className='MovieList__Movie__Poster'>
+              <img
+                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
+                alt='Movie Poster'
+              />
+            </div>
+            <div className='MovieList__Movie__Details'>
+              <h2>Black Adam</h2>
+              <p>Acción, 2h 10min, +14.</p>
+            </div>
+          </article>
+          <article className='MovieList__Movie'>
+            <div className='MovieList__Movie__Poster'>
+              <img
+                src='https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001367?referenceScheme=HeadOffice&allowPlaceHolder=true'
+                alt='Movie Poster'
+              />
+            </div>
+            <div className='MovieList__Movie__Details'>
+              <h2>Black Adam</h2>
+              <p>Acción, 2h 10min, +14.</p>
+            </div>
+          </article>
+        </section>
       </main>
     </div>
   );

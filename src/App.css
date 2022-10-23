@@ -68,3 +68,35 @@
 .FilterBar button:hover {
   background-color: rgb(47, 105, 152);
 }
+
+.MovieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  place-items: center;
+  gap: 10px;
+  margin-top: 36px;
+}
+
+.MovieList__Movie {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  user-select: none;
+  gap: 20px;
+}
+
+.MovieList__Movie__Poster {
+  max-width: 200px;
+  max-height: 300px;
+}
+
+.MovieList__Movie__Poster img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.MovieList__Movie__Details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
