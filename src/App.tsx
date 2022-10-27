@@ -31,13 +31,13 @@ function App() {
   }, []);
 
   return (
-    <div className='App'>
+    <>
       <Navbar />
       <Container isMain={true}>
         <FilterBar />
         <MoviesList movies={movies} />
       </Container>
-    </div>
+    </>
   );
 }
 
