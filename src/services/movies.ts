@@ -7,4 +7,10 @@ const fetchMovies = () => {
   ).then((res) => res.json());
 };
 
-export { fetchMovies };
+const fetchMovieGenres = () => {
+  return fetch(
+    'https://api.themoviedb.org/3/genre/movie/list?api_key=64cef69b34bfdebbbba77a32ab7f2ee2&language=en-US'
+  ).then((res) => res.json());
+};
+
+export { fetchMovies, fetchMovieGenres };

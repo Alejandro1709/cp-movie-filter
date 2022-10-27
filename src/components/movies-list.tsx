@@ -1,8 +1,8 @@
-import type Movie from '../types/movie';
+import { FormattedMovie } from '../types/movie';
 import './movies-list.css';
 
 type MoviesListProps = {
-  movies: Movie[];
+  movies: FormattedMovie[];
 };
 
 function MoviesList({ movies }: MoviesListProps) {
@@ -20,10 +20,7 @@ function MoviesList({ movies }: MoviesListProps) {
               </div>
               <div className='MovieList__Movie__Details'>
                 <h2>{movie.title}</h2>
-                {/* <p>
-              {movie.genres.join(',')}, {movie.duration},{' '}
-              {movie.restriction}.
-            </p> */}
+                <p>{movie.genres.join(', ')}</p>
               </div>
             </article>
           ))
