@@ -23,6 +23,18 @@ const cities = [
     id: 5,
     title: 'Piura',
   },
+  {
+    id: 6,
+    title: 'Tacna',
+  },
+  {
+    id: 7,
+    title: 'Iquitos',
+  },
+  {
+    id: 8,
+    title: 'Chiclayo',
+  },
 ];
 
 function FilterBar() {
