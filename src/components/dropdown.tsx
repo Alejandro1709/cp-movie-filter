@@ -1,10 +1,16 @@
 import './dropdown.css';
 
 function Dropdown() {
+  function handleClick() {
+    console.log('click');
+  }
+
   return (
     <div className='Dropdown'>
       <ul className='Dropdown__list'>
-        <li className='Dropdown__list__item'>Terrifier 2</li>
+        <li className='Dropdown__list__item' onClick={handleClick}>
+          Terrifier 2
+        </li>
         <li className='Dropdown__list__item'>It: Chapter Two</li>
         <li className='Dropdown__list__item'>Annabelle Comes Home</li>
         <li className='Dropdown__list__item'>Child's Play</li>
