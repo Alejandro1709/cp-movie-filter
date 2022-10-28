@@ -10,19 +10,19 @@
 }
 
 .FilterBar__list {
+  position: relative;
   display: flex;
   list-style: none;
 }
 
 .FilterBar__list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   text-align: center;
   padding: 21px 29px;
   border-right: 1px solid #eee;
-}
-
-.FilterBar__list__item:last-child {
-  border-right: 0;
 }
 
 .FilterBar button {
@@ -40,4 +40,9 @@
 
 .FilterBar button:hover {
   background-color: rgb(47, 105, 152);
+}
+
+.FilterBar__list__item__wrapper {
+  display: flex;
+  flex-direction: column;
 }
