@@ -1,13 +1,14 @@
-import useMovies from '../hooks/useMovies';
 import DropdownList from './dropdown-list';
 import './dropdown.css';
 
-function Dropdown() {
-  const { movies } = useMovies();
+interface DropdownProps {
+  items: any[];
+}
 
+function Dropdown({ items }: DropdownProps) {
   return (
     <div className='Dropdown'>
-      <DropdownList items={movies} />
+      <DropdownList items={items} />
     </div>
   );
 }

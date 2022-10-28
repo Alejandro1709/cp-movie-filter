@@ -3,11 +3,13 @@ import Dropdown from './dropdown';
 interface FilterItemProps {
   title: string;
   description: string;
+  items: any[];
 }
 
 function FilterItem({
   title = 'Title',
   description = 'Description',
+  items,
 }: FilterItemProps) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   return (
@@ -19,7 +21,7 @@ function FilterItem({
         <h3>{title}</h3>
         <span>{description}</span>
       </div>
-      {isDropdownOpen ? <Dropdown /> : null}
+      {isDropdownOpen ? <Dropdown items={items} /> : null}
     </li>
   );
 }
