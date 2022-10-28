@@ -6,10 +6,7 @@ function FilterBar() {
     <div className='FilterBar'>
       <ul className='FilterBar__list'>
         <FilterItem />
-        <li className='FilterBar__list__item'>
-          <h3>Por ciudad</h3>
-          <span>Donde estas?</span>
-        </li>
+        <FilterItem />
         <li className='FilterBar__list__item'>
           <h3>Por cine</h3>
           <span>Elige tu Cineplanet</span>
