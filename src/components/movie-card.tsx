@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { FormattedMovie } from '../types/movie';
+import Placeholderimage from '../assets/contentLoading.png';
 import './movie-card.css';
 
 interface MovieCardProps {
@@ -6,12 +8,20 @@ interface MovieCardProps {
 }
 
 function MovieCard({ movie }: MovieCardProps) {
+  const [poster, setPoster] = useState(Placeholderimage);
+
+  function handleChange() {
+    setPoster(`https://image.tmdb.org/t/p/w500/${movie.poster_path}`);
+  }
+
   return (
     <article className='Movie' key={movie.id}>
       <div className='Movie__Poster'>
         <img
-          src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+          src={poster}
           alt={movie.title}
+          loading='lazy'
+          onLoad={handleChange}
           draggable={false}
         />
       </div>
