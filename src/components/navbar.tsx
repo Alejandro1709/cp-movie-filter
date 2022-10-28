@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div className='Navbar'>
       <nav role='navigation' className='Navbar__wrapper'>
-        <h1>Logo</h1>
+        <h1>CineMe</h1>
         <ul>
           <li>Home</li>
           <li>Movies</li>

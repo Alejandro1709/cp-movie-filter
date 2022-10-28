@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function useAsync(asyncFn) {
+export default function useAsync(asyncFn: () => Promise<any>) {
   const [state, setState] = useState({
     status: 'idle',
     data: null,
