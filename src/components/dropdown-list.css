@@ -1,0 +1,9 @@
+.Dropdown__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  max-height: 120px;
+  overflow: scroll;
+  user-select: none;
+}

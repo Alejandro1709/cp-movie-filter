@@ -1,0 +1,7 @@
+.Dropdown__list__item {
+  cursor: pointer;
+}
+
+.Dropdown__list__item:hover {
+  background-color: #f2f2f2;
+}

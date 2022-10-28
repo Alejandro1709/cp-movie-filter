@@ -1,25 +1,33 @@
+import useMovies from '../hooks/useMovies';
+import FilterItem from './filter-item';
+import { cities } from '../data';
 import './filter-bar.css';
 
 function FilterBar() {
+  const { movies } = useMovies();
   return (
     <div className='FilterBar'>
       <ul className='FilterBar__list'>
-        <li className='FilterBar__list__item'>
-          <h3>Por pelicula</h3>
-          <span>Que quieres ver</span>
-        </li>
-        <li className='FilterBar__list__item'>
-          <h3>Por ciudad</h3>
-          <span>Donde estas?</span>
-        </li>
-        <li className='FilterBar__list__item'>
-          <h3>Por cine</h3>
-          <span>Elige tu Cineplanet</span>
-        </li>
-        <li className='FilterBar__list__item'>
-          <h3>Por fecha</h3>
-          <span>Elige un dia</span>
-        </li>
+        <FilterItem
+          title='Por pelicula'
+          description='Que quieres ver?'
+          items={movies}
+        />
+        <FilterItem
+          title='Por ciudad'
+          description='Donde estas?'
+          items={cities}
+        />
+        <FilterItem
+          title='Por cine'
+          description='Elige tu Cineplanet'
+          items={movies}
+        />
+        <FilterItem
+          title='Por fecha'
+          description='Elige un dia'
+          items={movies}
+        />
       </ul>
       <button>Apply</button>
     </div>
