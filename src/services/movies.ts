@@ -1,5 +1,5 @@
 const BASE_URL = 'https://api.themoviedb.org/3';
-const API_KEY = '64cef69b34bfdebbbba77a32ab7f2ee2';
+const API_KEY = import.meta.env.VITE_MOVIEDB_API_KEY;
 
 const fetchMovies = () => {
   return fetch(
