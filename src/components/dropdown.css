@@ -1,8 +1,9 @@
 .Dropdown {
-  position: relative;
+  position: absolute;
   display: inline-block;
   background-color: white;
-  padding: 0.8rem;
+  padding: 0.8rem 0.8rem 0 0.8rem;
+  top: 19%;
   border-radius: 8px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 11px rgba(0, 0, 0, 0.1);
 }
@@ -12,7 +13,7 @@
   flex-direction: column;
   gap: 5px;
   list-style: none;
-  max-height: 110px;
+  max-height: 120px;
   overflow: scroll;
   user-select: none;
 }
