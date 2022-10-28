@@ -23,6 +23,7 @@
   text-align: center;
   padding: 21px 29px;
   border-right: 1px solid #eee;
+  cursor: pointer;
 }
 
 .FilterBar button {
