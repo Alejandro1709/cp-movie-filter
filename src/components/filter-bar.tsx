@@ -5,16 +5,10 @@ function FilterBar() {
   return (
     <div className='FilterBar'>
       <ul className='FilterBar__list'>
-        <FilterItem />
-        <FilterItem />
-        <li className='FilterBar__list__item'>
-          <h3>Por cine</h3>
-          <span>Elige tu Cineplanet</span>
-        </li>
-        <li className='FilterBar__list__item'>
-          <h3>Por fecha</h3>
-          <span>Elige un dia</span>
-        </li>
+        <FilterItem title='Por pelicula' description='Que quieres ver?' />
+        <FilterItem title='Por ciudad' description='Donde estas?' />
+        <FilterItem title='Por cine' description='Elige tu Cineplanet' />
+        <FilterItem title='Por fecha' description='Elige un dia' />
       </ul>
       <button>Apply</button>
     </div>
