@@ -8,21 +8,3 @@
   border-radius: 8px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 11px rgba(0, 0, 0, 0.1);
 }
-
-.Dropdown__list {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  list-style: none;
-  max-height: 120px;
-  overflow: scroll;
-  user-select: none;
-}
-
-.Dropdown__list__item {
-  cursor: pointer;
-}
-
-.Dropdown__list__item:hover {
-  background-color: #f2f2f2;
-}

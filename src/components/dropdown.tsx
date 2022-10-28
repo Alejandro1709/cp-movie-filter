@@ -1,25 +1,13 @@
+import useMovies from '../hooks/useMovies';
+import DropdownList from './dropdown-list';
 import './dropdown.css';
 
 function Dropdown() {
-  function handleClick() {
-    console.log('click');
-  }
+  const { movies } = useMovies();
 
   return (
     <div className='Dropdown'>
-      <ul className='Dropdown__list'>
-        <li className='Dropdown__list__item' onClick={handleClick}>
-          Terrifier 2
-        </li>
-        <li className='Dropdown__list__item'>It: Chapter Two</li>
-        <li className='Dropdown__list__item'>Annabelle Comes Home</li>
-        <li className='Dropdown__list__item'>Child's Play</li>
-        <li className='Dropdown__list__item'>Us</li>
-        <li className='Dropdown__list__item'>Ready or Not</li>
-        <li className='Dropdown__list__item'>Child's Play</li>
-        <li className='Dropdown__list__item'>Us</li>
-        <li className='Dropdown__list__item'>Ready or Not</li>
-      </ul>
+      <DropdownList items={movies} />
     </div>
   );
 }
