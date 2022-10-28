@@ -1,41 +1,7 @@
 import useMovies from '../hooks/useMovies';
 import FilterItem from './filter-item';
+import { cities } from '../data';
 import './filter-bar.css';
-
-const cities = [
-  {
-    id: 1,
-    title: 'Lima',
-  },
-  {
-    id: 2,
-    title: 'Arequipa',
-  },
-  {
-    id: 3,
-    title: 'Trujillo',
-  },
-  {
-    id: 4,
-    title: 'Cusco',
-  },
-  {
-    id: 5,
-    title: 'Piura',
-  },
-  {
-    id: 6,
-    title: 'Tacna',
-  },
-  {
-    id: 7,
-    title: 'Iquitos',
-  },
-  {
-    id: 8,
-    title: 'Chiclayo',
-  },
-];
 
 function FilterBar() {
   const { movies } = useMovies();
